@@ -1,1 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
 @import 'tailwindcss';
+
+@theme {
+	--color-cream: #fff6ee;
+	--color-peach: #ffe5d4;
+	--color-coral: #ff8866;
+	--color-coral-deep: #ff6b4a;
+	--color-mint: #c7ebdc;
+	--color-mint-deep: #5dd3a8;
+	--color-ink: #2d2a3c;
+	--color-ink-soft: #6b6580;
+
+	--font-sans: 'Nunito', system-ui, sans-serif;
+}
+
+@layer base {
+	body {
+		background-color: var(--color-cream);
+		color: var(--color-ink);
+		font-family: var(--font-sans);
+		font-weight: 400;
+	}
+	h1,
+	h2,
+	h3 {
+		font-weight: 900;
+		letter-spacing: -0.02em;
+	}
+}
