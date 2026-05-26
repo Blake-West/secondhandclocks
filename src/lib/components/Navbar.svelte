@@ -22,7 +22,23 @@
 			onclick={() => (menuOpen = false)}
 			class="flex items-center gap-2 text-xl font-black tracking-tight text-ink transition-colors hover:text-coral-deep"
 		>
-			<span aria-hidden="true">🕐</span>
+			<svg
+				aria-hidden="true"
+				viewBox="0 0 64 64"
+				class="h-6 w-6"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="4"
+				stroke-linecap="round"
+			>
+				<circle cx="32" cy="32" r="28" />
+				<line x1="32" y1="8" x2="32" y2="14" />
+				<line x1="32" y1="56" x2="32" y2="50" />
+				<line x1="8" y1="32" x2="14" y2="32" />
+				<line x1="56" y1="32" x2="50" y2="32" />
+				<line x1="32" y1="32" x2="51" y2="21" class="text-coral-deep" stroke="currentColor" />
+				<circle cx="32" cy="32" r="2.5" fill="currentColor" stroke="none" class="text-coral-deep" />
+			</svg>
 			<span>secondhandclocks</span>
 		</a>
 
